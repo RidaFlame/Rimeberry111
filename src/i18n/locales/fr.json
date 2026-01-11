@@ -44,6 +44,9 @@
     "production": {
       "title": "Notre Production"
     },
+    "ourProductions": {
+      "title": "Nos Productions"
+    },
     "products": {
       "title": "Nos Produits",
       "subtitle": "Produits 100% naturels",

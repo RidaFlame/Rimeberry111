@@ -44,6 +44,9 @@
     "production": {
       "title": "إنتاجنا"
     },
+    "ourProductions": {
+      "title": "إنتاجاتنا"
+    },
     "products": {
       "title": "منتجاتنا",
       "subtitle": "منتجات 100% طبيعية",

@@ -70,13 +70,13 @@ const Navbar = () => {
             <img 
               src="/images/logo/Logo.png" 
               alt="Rimeberry groupe" 
-              className="h-10 md:h-12 lg:h-14 w-auto object-contain"
+              className="h-14 md:h-16 lg:h-20 w-auto object-contain"
               onError={(e) => {
                 e.target.style.display = 'none';
               }}
             />
             <div className="relative">
-              <span className="text-xl md:text-2xl lg:text-3xl font-heading font-light text-tertiary group-hover:text-white transition-colors duration-300 tracking-wider arabic-text">
+              <span className="text-lg md:text-xl lg:text-2xl font-heading font-light text-tertiary group-hover:text-white transition-colors duration-300 tracking-wider arabic-text">
                 {currentLang === 'ar' ? 'مجموعة ريمبيري' : 'Rimeberry groupe'}
               </span>
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-tertiary group-hover:w-full transition-all duration-300" />
@@ -89,7 +89,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`font-body text-sm font-light transition-all duration-300 relative px-4 py-2 rounded-lg arabic-text ${
+                className={`font-body text-xs md:text-sm font-light transition-all duration-300 relative px-4 py-2 rounded-lg arabic-text ${
                   location.pathname === link.path
                     ? 'text-tertiary bg-tertiary/20'
                     : 'text-white/90 hover:text-tertiary hover:bg-white/10'

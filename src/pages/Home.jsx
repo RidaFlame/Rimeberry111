@@ -71,6 +71,62 @@ const Home = () => {
         </motion.div>
       </section>
 
+      {/* Our Productions Section - Horizontal Scrolling */}
+      <section className="py-16 md:py-24 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12 md:mb-16"
+          >
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-light text-secondary mb-6 arabic-text">
+              {t('home.ourProductions.title')}
+            </h2>
+          </motion.div>
+          
+          {/* Horizontal Scrolling Container */}
+          <div className="relative">
+            <div className="overflow-x-auto scrollbar-hide pb-4">
+              <div className="flex gap-4 md:gap-6" style={{ width: 'max-content' }}>
+                {[
+                  '/images/our productions/IMG-20260110-WA0026.jpg',
+                  '/images/our productions/IMG-20260110-WA0027.jpg',
+                  '/images/our productions/IMG-20260110-WA0028.jpg',
+                  '/images/our productions/IMG-20260110-WA0029.jpg',
+                  '/images/our productions/IMG-20260110-WA0030.jpg',
+                  '/images/our productions/IMG-20260110-WA0031.jpg',
+                  '/images/our productions/IMG-20260110-WA0032.jpg',
+                  '/images/our productions/IMG-20260110-WA0033.jpg',
+                  '/images/our productions/IMG-20260110-WA0034.jpg'
+                ].map((imagePath, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    whileHover={{ scale: 1.05 }}
+                    className="flex-shrink-0"
+                  >
+                    <div className="relative w-64 md:w-80 lg:w-96 h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                      <img
+                        src={imagePath}
+                        alt={`Production ${index + 1}`}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Values Section - Three Cards */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
