@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode production",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && echo \"Build complete! Now push dist folder to gh-pages branch\""
   },
   "dependencies": {
     "react": "^18.2.0",

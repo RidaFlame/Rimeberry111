@@ -2,11 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-// Configured for GitHub Pages deployment (root level)
+// Configured for GitHub Pages deployment (branch-based, no GitHub Actions)
 // HashRouter uses # for routing (works regardless of base path - no server config needed)
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Root path for GitHub Pages (works with localhost and GitHub Pages)
+  base: '/Rimeberry111/', // GitHub Pages base path for repository "Rimeberry111"
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
