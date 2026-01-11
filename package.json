@@ -3,11 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://github.com/RidaFlame/rimrberryshit",
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode production",
     "preview": "vite preview",
-    "deploy": "npm run build && echo \"Build complete! For GitHub Actions: just push to main. For manual: install gh-pages package\""
+    "deploy": "npm run build && gh-pages -d dist",
+    "deploy:gh": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -25,6 +27,7 @@
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
     "vite": "^5.0.8"

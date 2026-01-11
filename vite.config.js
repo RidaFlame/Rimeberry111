@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
 // HashRouter uses # for routing (works regardless of base path - no server config needed)
 export default defineConfig({
   plugins: [react()],
-  base: '/Rimeberry111/', // GitHub Pages base path for repository "Rimeberry111"
+  base: '/rimrberryshit/', // GitHub Pages base path for repository "Rimeberry111"
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
