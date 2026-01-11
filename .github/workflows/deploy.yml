@@ -56,6 +56,11 @@ jobs:
           echo "✅ Build verification successful!"
           echo "Contents of dist folder:"
           ls -la dist/
+      
+      - name: Create .nojekyll file
+        run: |
+          touch dist/.nojekyll
+          echo "✅ .nojekyll file created"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
