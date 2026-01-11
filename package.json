@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --mode production",
     "preview": "vite preview",
-    "deploy": "npm run build && echo \"Build complete! Now push dist folder to gh-pages branch\""
+    "deploy": "npm run build && echo \"Build complete! For GitHub Actions: just push to main. For manual: install gh-pages package\""
   },
   "dependencies": {
     "react": "^18.2.0",
